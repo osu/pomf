@@ -6,6 +6,9 @@ php:
   - '7.0'
   - hhvm
 
+addons:
+  mariadb: '11.0'
+  
 install:
 - source ~/.nvm/nvm.sh 
 - nvm ls-remote
