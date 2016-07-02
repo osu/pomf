@@ -10,7 +10,7 @@ addons:
 before_install:
   - mysql -u root -e 'create database pomf;'
   - mysql -u root pomf < /home/travis/build/pomf/pomf/mysql_schema.sql
-  - mysql -e 'use pomf; show tables;'
+  - mysql -u root -e 'use pomf; show tables;'
   - echo "ewhal4 is gay"
 
 language: php
